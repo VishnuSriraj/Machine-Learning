@@ -5,11 +5,11 @@ function [J, grad] = Functionname(theta, X, y, lambda)
 m = length(y); % number of training examples
 J = 0;
 grad = zeros(size(theta));
-h=sigmoid(X*theta);  
-reg=0;
+h = sigmoid(X * theta);  
+reg = 0;
 %   For regularizing theta without a bias unit.
-t=theta;
+t = theta;
 t(1) = 0;
-reg = (lambda * (t'*t)) / (2*m);
-J= (1/m) * (-y' * log(h) - (1-y)' * log(1-h)) + reg;
+reg = (lambda * (t' * t)) / (2 * m);
+J = (1/m) * (-y' * log(h) - (1-y)' * log(1-h)) + reg;
 grad = ((X' * (h-y)) + lambda * theta1) / m;
