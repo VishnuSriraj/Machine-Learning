@@ -1,2 +1,2 @@
 # Machine-Learning
-Code for computing Cost Function and Gradient Decent using Regularized logistic regression.
+Code to compute Cost Function and Gradient Decent using Octave/MATLAB script for Regularized Logistic Regression.
